@@ -7,4 +7,27 @@ Durante su desarrollo se aplicamos principios de programación orientada a objet
 
 El proyecto obtuvo una calificación de 9/10 en la evaluación final de la asignatura.
 
-# Cómo Ejecutarlo 
+## Cómo Ejecutarlo 
+  1. Abre el proyecto en tu IDE (por ejemplo, IntelliJ o Eclipse).
+  2. Ejecuta la clase **`Main.java`**:
+     - En el IDE: `Run As...` → **Java Application**
+  3. Una vez iniciado, el juego se controla por consola mediante comandos.
+
+### Comandos disponibles
+Escribe `help` o `h` para ver la lista de comandos:
+
+- `[l]oad <fileName>`: carga la configuración del juego desde el archivo `<fileName>`
+- `[s]ave <fileName>`: guarda la configuración actual en el archivo `<fileName>`
+- `[a]dd[O]bject <object_description>`: añade un objeto al tablero  
+  `<object_description> = (col,row) objName [dir [BIG|SMALL]]`  
+  Ejemplo: `(12,3) Mario LEFT SMALL`
+- `[a]ction [[R]IGHT | [L]EFT | [U]P | [D]OWN | [S]TOP]+`: realiza acciones del usuario
+- `[u]pdate` o `""`: no se realiza ninguna acción
+- `[r]eset [numLevel]`: reinicia el juego (si se indica `numLevel`, carga ese nivel)
+- `[h]elp`: muestra esta ayuda
+- `[e]xit`: salir del juego
+
+### Configuración de inicio (opcional)
+Puedes iniciar el juego con un nivel o una configuración específica desde la configuración de ejecución del IDE:  
+- **Nivel inicial (argumentos):** `-1`, `0`, `1` o `2` (niveles implementados actualmente).  
+- **Archivo de configuración:** en `Run Configurations` → `Common` → `InputFile`, selecciona el archivo de configuración con el que quieres comenzar.
