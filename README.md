@@ -30,4 +30,4 @@ Escribe `help` o `h` para ver la lista de comandos:
 ### Configuración de inicio (opcional)
 Puedes iniciar el juego con un nivel o una configuración específica desde la configuración de ejecución del IDE:  
 - **Nivel inicial (argumentos):** `-1`, `0`, `1` o `2` (niveles implementados actualmente).  
-- **Archivo de configuración:** en `Run Configurations` → `Common` → `InputFile`, selecciona el archivo de configuración con el que quieres comenzar.
+- **Archivo de configuración:** en `Run Configurations` → `Common` → `InputFile`, selecciona el archivo de configuración con el que quieres comenzar. Debe tener la estructura de los archivos contenidos en la carpeta Configuraciones. 
